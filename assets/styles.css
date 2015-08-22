@@ -1,0 +1,120 @@
+body {
+background-color:#fff;
+margin:0;
+padding:0;
+}
+table {
+width:100%;
+border-collapse:collapse;
+border:0;
+}
+input.textbox{
+height: 22px;
+font-size:1.1em;
+padding:2px 4px;
+}
+select{
+line-height:22px;
+}
+.table-form th {
+padding:5px;
+}
+.table-form td {
+padding:5px;
+}
+.table-list th{
+font-family:Comic Sans MS,sans-serif;
+padding:2px;
+}
+.table-list td{
+font-family:Comic Sans MS,sans-serif;
+padding:2px;
+cursor:pointer;
+}
+.table-list tbody tr.odd{
+color: #fa8072;
+}
+.table-list tbody tr.even{
+color: #000;
+}
+.table-list tbody tr:hover{
+color: #0088cc;
+}
+.table-list tfoot td{
+color: #0088cc;
+}
+.msgbox{
+color:red;
+text-align:center;
+width:450px;
+padding:5px;
+margin:auto;
+font-size:0.9em;
+}
+.msgbox-icon{
+background:url(img/info.gif) center center no-repeat;
+display:inline-block;
+width:16px;
+height:16px;
+}
+.buttons{
+margin:3px auto;
+}
+.linkbutton,
+.linkbutton:visited {
+font-family:Comic Sans MS,sans-serif;
+font-weight:bold;
+display:inline-block;
+padding:3px 7px 3px 34px;
+border: 1px solid transparent;
+text-decoration:none;
+color:#0000FF;
+}
+.linkbutton:hover {
+border: 1px solid #dedede;
+background-color:#f0f0f0;
+}
+.linkbutton-finish {
+background:url(img/btn_ok.png) 7px 3px no-repeat;
+}
+.linkbutton-add {
+background:url(img/btn_add.png) 7px 3px no-repeat;
+}
+.linkbutton-refresh {
+background:url(img/btn_refresh.png) 7px 3px no-repeat;
+}
+.linkbutton-back {
+background:url(img/btn_back.png) 7px 3px no-repeat;
+}
+.main-page{
+margin:0 auto;
+width:540px;
+background:url(img/bg_wood2.jpg) left top repeat;
+}
+.header{
+background-color:#f0f0f0;
+border-bottom:1px solid #ccc;
+}
+.main-content{
+margin:3px;
+height:443px;
+}
+.footer{
+text-align:center;
+}
+.links{
+margin:2px auto;
+font-family:sans-serif;
+font-size:0.85em;
+}
+.announce{
+color: #888;
+margin:2px 20px;
+font-size:0.65em;
+}
+.left{text-align:left}
+.right{text-align:right}
+.center{text-align:center}
+.clear{clear:both;width:0;height:0} 
+.fl {float:left}
+.fr {float:right}

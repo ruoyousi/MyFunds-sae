@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Google Maps JavaScript API v3 Example: Event Closure</title>
+<style>
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#map_canvas {
+  height: 100%;
+}
+
+@media print {
+  html, body {
+    height: auto;
+  }
+
+  #map_canvas {
+    height: 650px;
+  }
+}
+</style>    
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript">
+  function initialize() {
+    var myOptions = {
+      zoom: 14,
+      center: new google.maps.LatLng(27.994243, 120.665339),
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map = new google.maps.Map(document.getElementById('map_canvas'),
+        myOptions);
+
+    google.maps.event.addListener(map, 'click', function(e) {
+      placeMarker(e.latLng, map);
+    });
+  }
+
+  function placeMarker(position, map) {
+    var marker = new google.maps.Marker({
+      position: position,
+      map: map
+    });
+    map.panTo(position);
+  }
+
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+<body>
+<div id="map_canvas"></div>
+</body>
+</html>

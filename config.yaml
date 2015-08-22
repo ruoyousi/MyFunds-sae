@@ -1,0 +1,14 @@
+name: myfunds
+version: 1
+handle:
+- rewrite: if(!is_dir() && !is_file()) goto "index.php?%{QUERY_STRING}"
+- hostaccess: if(path ~ "^/application/") allow "127.0.0.1"
+- hostaccess: if(path ~ "^/system/") allow "127.0.0.1"
+- passwdaccess: if(path ~ "/cron/") passwd "ruoyousi:12345678"
+
+cron:
+- description: cron fetch fund value data
+  url: cron/fetch_fund_value_data
+  schedule: every 1 hour,offset 0, from 20:00 to 23:00
+  timezone: Beijing
+  login: ruoyousi@12345678

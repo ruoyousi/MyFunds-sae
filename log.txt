@@ -1,0 +1,11 @@
+config.yaml
+
+handle:
+- passwdaccess: if(path ~ "/cron/") passwd "ruoyousi:1qaz2wsx"
+
+cron:
+- description: cron fetch fund value data
+  url: cron/fetch_fund_value_data
+  schedule: every 1 hour,offset 0, from 20:00 to 23:00
+  timezone: Beijing
+  login: ruoyousi@1qaz2wsx
